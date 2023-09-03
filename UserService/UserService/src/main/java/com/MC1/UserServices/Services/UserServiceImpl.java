@@ -25,7 +25,7 @@ public class UserServiceImpl implements UserService{
 
 	@Override
 	public User getUser(int id) {
-		return userRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("User ith the given id is not present in server : " + id));
+		return userRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("User with the given id is not present in server : " + id));
 	}
 
 }
