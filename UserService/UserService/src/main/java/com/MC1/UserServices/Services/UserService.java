@@ -13,6 +13,6 @@ public interface UserService {
 	
 	List<User> getAllUser();
 	
-	User getUser(int id);
+	User getUser(int userId);
 	
 }
