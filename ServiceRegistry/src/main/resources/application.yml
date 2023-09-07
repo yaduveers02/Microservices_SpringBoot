@@ -1,0 +1,14 @@
+eureka:
+  instance:
+    hostname: localhost
+
+#this will not allow this microservice to register as client
+  client:
+    register-with-eureka: false
+#   this will disallow all and no one will be able to fetch this registry
+    fetch-registry: false
+    
+server:
+  port: 8761
+    
+    
